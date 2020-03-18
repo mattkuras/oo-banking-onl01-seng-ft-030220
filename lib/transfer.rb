@@ -17,7 +17,7 @@ class Transfer
   def execute_transaction 
     if sender.valid? == false || receiver.valid? == false 
       self.status = "rejected" 
-      "Transaction rejected. Please check your account balance."
+      puts "Transaction rejected. Please check your account balance."
     elsif @status == "complete"
       "Transfer was already executed."
   else 
